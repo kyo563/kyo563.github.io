@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="JoinQueue Bot・待機列整理アプリ。わんコメの参加コメントから待機列を管理し、NOW・NEXT・待機列をOBSに表示します。作者 kyo563。">
+  <meta name="author" content="kyo563">
+  <title>JoinQueue Bot | 待機列整理アプリ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrap nav"><a class="brand" href="./"><span class="mark" aria-hidden="true">JQ</span> JoinQueue Bot</a><nav aria-label="メイン"><a href="#features">機能</a><a href="privacy.html">プライバシー</a><a href="mailto:joinqueue.bot@gmail.com">お問い合わせ</a></nav></header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">わんコメ連携 / YouTube Live / OBS</p>
+      <h1>参加型配信の順番を、<br>ひと目で。</h1>
+      <p class="lead">コメント欄から参加者をリストアップするプラグインです。<br>待機列を整理し、NOW・NEXT・待機列をOBSに表示します。</p>
+      <div class="actions"><a class="button" href="https://github.com/kyo563/plugin-3kHz/releases/tag/onecomme-v0.1.4">プラグインをダウンロード</a><a class="button secondary" href="https://github.com/kyo563/plugin-3kHz">ソースコード</a></div>
+      <p class="small">作者・運営：kyo563 / 共通Bot：<a href="https://www.youtube.com/@JoinQueueBot">@JoinQueueBot</a></p>
+    </section>
+    <section id="features" aria-labelledby="features-title"><h2 id="features-title">配信中の操作を、シンプルに。</h2><div class="cards">
+      <article><p class="eyebrow">01 / QUEUE</p><h3>コメントから待機列へ</h3><p>コメントの受信はわんコメに任せ、参加希望の解析と待機列の管理をプラグインが行います。管理画面ではドラッグで順番を変更できます。</p></article>
+      <article><p class="eyebrow">02 / OBS</p><h3>配信画面で順番を共有</h3><p>縦・横のレイアウト、表示文言、フォント、文字サイズ、背景色・透過度を設定できます。設定と待機列は利用者のPCに保存します。</p></article>
+      <article><p class="eyebrow">03 / BOT</p><h3>共通Botで必要な案内だけ</h3><p>次グループの呼び出し、Botへの呼びかけに対する待機順の返信、待機人数・グループ数の定期案内を個別に選択できます。</p></article>
+    </div></section>
+    <section class="panel" aria-labelledby="connect-title"><h2 id="connect-title">JoinQueue Bot の接続について</h2><ol><li>配信するチャンネルで、@JoinQueueBotを標準モデレーターに登録します。</li><li>プラグインの設定画面でBot設定を開き、配信者自身のGoogleアカウントでチャンネルを認証します。</li><li>わんコメの接続先と合わせた配信を選び、接続を確認して通知を有効にします。</li></ol><p>配信者にはチャンネルの所有確認のため、YouTubeの<strong>読み取り専用権限</strong>を要求します。共通Botの投稿用認証情報はサーバーで管理し、プラグインへ配布しません。</p><p class="notice">共通Botの一般提供に向けてGoogle OAuth審査の準備中です。現在のGoogle認証はテスト対象者に限られます。メンバー限定配信でのBot投稿は、対応確認前のため保証しません。待機列・OBS表示はBot接続とは別に利用できます。</p><p>Google認証の前に<a href="privacy.html">プライバシーポリシー</a>と<a href="terms.html">利用に関するご案内</a>をご確認ください。</p></section>
+    <section class="english" lang="en"><h2>About JoinQueue Bot</h2><p>JoinQueue Bot is a shared YouTube live-chat notification service for the OneComme waiting-list plugin. OneComme receives comments; the local plugin manages the queue and OBS display. Our backend validates the stream and posts queue notifications using the shared Bot account.</p><p>Creators authorize <code>youtube.readonly</code> to prove channel ownership. Their Google access token is not persisted, and no creator refresh token is requested. Only the service operator authorizes <code>youtube.force-ssl</code> for the shared Bot. Public availability is being prepared; OAuth verification is not yet complete.</p><p>Developer and operator: kyo563. Contact: <a href="mailto:joinqueue.bot@gmail.com">joinqueue.bot@gmail.com</a>.</p></section>
+  </main>
+  <footer class="wrap"><span>© 2026 kyo563 · JoinQueue Bot</span><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用に関するご案内</a></footer>
+</body>
+</html>
